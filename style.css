@@ -22,9 +22,9 @@ header {
 }
 
 .logo img {
-    width: 60%;      /* Logo width as a percentage of its container */
-    min-width: 100px; /* Minimum width to prevent the logo from getting too small */
-    max-width: 250px; /* Maximum width to prevent the logo from getting too large */
+    width: 60%;
+    min-width: 100px; 
+    max-width: 250px;
 }
 
 nav ul {
@@ -86,8 +86,8 @@ section {
 .game-list {
     display: flex;
     flex-direction: column;
-    align-items: center; /* This will center the child articles */
-    width: 100%; /* Adjust based on your layout requirements */
+    align-items: center; 
+    width: 100%;
 }
 
 .game-list article {
@@ -102,21 +102,21 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease; /* Animate transformation over 0.3 seconds */
+    transition: transform 0.3s ease; 
 }
 
 .game-list article:hover {
-    transform: scale(1.1); /* Increase size by 10% on hover */
+    transform: scale(1.1); 
 }
 
 h1, h2, h3 {
     color: #ffb428;
-    padding: 0; /* Remove padding to allow flexbox to center the text */
-    line-height: 80px; /* Line height equal to height to center text vertically */
-    display: flex; /* Use flexbox to center the text */
-    align-items: center; /* Align text vertically in the center */
-    justify-content: center; /* Align text horizontally in the center */
-    margin: 0 auto; /* Center header within its container horizontally */
+    padding: 0;
+    line-height: 80px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto; 
 }
 
 h1 {
@@ -127,13 +127,13 @@ h1 {
 }
 
 h3 {
-    margin: 5px auto; /* Reduced margin for closeness */
-    line-height: normal; /* Adjust line height if necessary */
+    margin: 5px auto; 
+    line-height: normal; 
 }
 
 .article-p {
-    color: #ffffff; /* Assuming you want white text, adjust as necessary */
-    margin: 5px auto; /* Reduced margin for closeness */
+    color: #ffffff; 
+    margin: 5px auto; 
     font-size: clamp(10px, 1vw, 15px);
 }
 

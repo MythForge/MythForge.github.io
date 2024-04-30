@@ -60,6 +60,10 @@ main {
     font-size: clamp(12px, 2.5vw, 20px);;
 }
 
+.mail-link:hover {
+    color: #c86b00;
+}
+
 section {
     width: 70%;
     margin-bottom: 40px;

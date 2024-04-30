@@ -1,78 +1,125 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'Pixel';
+    src: url('fonts/PixelFont.ttf') format('truetype');
+}
+
+body, input, button, textarea {
+    font-family: 'Pixel', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('images/texture2.png');
+    background-repeat: repeat;
+    color: #f8f8f2;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-image: url('images/texture1.png');
+    background-repeat: repeat;
+    padding: 20px 10%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    max-width: 150px;
-    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
-    width: 100%;
-    height: auto;
+    width: 100px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ff9f32;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
 }
 
 main {
-    padding: 20px;
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
 section {
+    width: 1000px;
     margin-bottom: 40px;
+    border: 2px solid #44475a;
+    padding: 20px;
+    text-align: center;
+    background-image: url('images/pixel-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
 }
 
-h1, h2 {
-    color: #333;
+.game-list article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ffffff50;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
+h1, h2, h3 {
+    color: #ffb428;
+    padding: 0; /* Remove padding to allow flexbox to center the text */
+    line-height: 80px; /* Line height equal to height to center text vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Use flexbox to center the text */
+    align-items: center; /* Align text vertically in the center */
+    justify-content: center; /* Align text horizontally in the center */
+    margin: 0 auto; /* Center header within its container horizontally */
 }
 
-form input,
-form textarea {
+h1 {
+    width: 700px; /* Fixed width */
+}
+
+h2 {
+    width: 400px; /* Fixed width */
+}
+
+h3 {
+    width: 200px; /* Fixed width */
+}
+
+h1, h2, h3, .game-list article {
+    background-image: url('images/texture2.png');
+    background-repeat: repeat;
+    background-position: -100px 10px; /* Adjust this if necessary */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    background: #44475a;
+    border: 1px solid #f8f8f2;
+    color: #f8f8f2;
 }
 
-form button {
-    background-color: #333;
-    color: #fff;
+button {
+    width: auto;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
     text-align: center;
 }
